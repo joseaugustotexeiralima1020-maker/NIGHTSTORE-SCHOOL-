@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NIGHTSTORE SCHOOL</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            NIGHTSTORE
+            <span>SCHOOL</span>
+        </div>
+
+        <nav>
+            <a href="#" id="inicioLink">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#produtos">Ofertas</a>
+        </nav>
+
+        <div class="header-buttons">
+
+            <button class="login" id="loginButton">
+                Entrar
+            </button>
+
+            <button class="cart">
+                🛒
+                <span>0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="tag">
+                    NIGHTSTORE SCHOOL
+                </p>
+
+                <h1>
+                    Materiais escolares
+                    <span>do seu jeito.</span>
+                </h1>
+
+                <p class="description">
+                    Encontre materiais, modelos, resumos,
+                    apresentações e muito mais em um só lugar.
+                </p>
+
+                <button class="shop-button" id="exploreButton">
+                    EXPLORAR PRODUTOS →
+                </button>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="glow"></div>
+
+                <h2>📚</h2>
+
+                <p>
+                    STUDY<br>
+                    SMART
+                </p>
+
+                <small>
+                    NIGHTSTORE SCHOOL
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <!-- PESQUISA -->
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span>🔎</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Pesquisar materiais..."
+                >
+
+                <button id="clearSearch">
+                    ×
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categories" id="categorias">
+
+            <h2>
+                Explorar categorias
+            </h2>
+
+            <div class="category-grid">
+
+                <button
+                    class="category"
+                    data-category="TRABALHOS"
+                >
+
+                    <div>📄</div>
+
+                    <h3>
+                        Trabalhos
+                    </h3>
+
+                    <p>
+                        Modelos e materiais
+                    </p>
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="CAPAS"
+                >
+
+                    <div>🎨</div>
+
+                    <h3>
+                        Capas
+                    </h3>
+
+                    <p>
+                        Capas personalizadas
+                    </p>
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="ESTUDOS"
+                >
+
+                    <div>🧠</div>
+
+                    <h3>
+                        Resumos
+                    </h3>
+
+                    <p>
+                        Materiais para estudar
+                    </p>
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="APRESENTAÇÃO"
+                >
+
+                    <div>📊</div>
+
+                    <h3>
+                        Apresentações
+                    </h3>
+
+                    <p>
+                        Slides e modelos
+                    </p>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUTOS -->
+        <section class="products" id="produtos">
+
+            <div class="section-title">
+
+                <div>
+
+                    <p>
+                        MAIS PROCURADOS
+                    </p>
+
+                    <h2>
+                        Produtos em destaque
+                    </h2>
+
+                </div>
+
+                <button id="showAllProducts">
+                    Ver todos →
+                </button>
+
+            </div>
+
+
+            <div
+                class="product-grid"
+                id="productGrid"
+            >
+                <!-- PRODUTOS SERÃO CRIADOS PELO JAVASCRIPT -->
+            </div>
+
+
+            <div
+                class="no-products"
+                id="noProducts"
+            >
+
+                <div>
+                    🔎
+                </div>
+
+                <h3>
+                    Nenhum produto encontrado
+                </h3>
+
+                <p>
+                    Tente pesquisar por outro nome ou categoria.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PÁGINA DO PRODUTO -->
+    <section
+        class="product-page"
+        id="productPage"
+    >
+
+        <div class="product-page-content">
+
+            <button
+                class="back-button"
+                id="backFromProduct"
+            >
+                ← Voltar para produtos
+            </button>
+
+
+            <div class="product-detail">
+
+                <div
+                    class="product-detail-image"
+                    id="detailImage"
+                >
+                    📚
+                </div>
+
+
+                <div class="product-detail-info">
+
+                    <p
+                        class="product-category"
+                        id="detailCategory"
+                    >
+                        CIÊNCIAS
+                    </p>
+
+                    <h1 id="detailName">
+                        Modelo de trabalho escolar
+                    </h1>
+
+                    <p
+                        class="product-detail-description"
+                        id="detailDescription"
+                    >
+                        Material digital criado para ajudar
+                        na organização dos estudos e trabalhos escolares.
+                    </p>
+
+                    <div
+                        class="detail-price"
+                        id="detailPrice"
+                    >
+                        R$ 8,90
+                    </div>
+
+                    <button
+                        class="detail-add-button"
+                        id="detailAddButton"
+                    >
+                        ADICIONAR AO CARRINHO →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TELA DE LOGIN -->
+    <section
+        class="login-page"
+        id="loginPage"
+    >
+
+        <div class="login-box">
+
+            <button
+                class="back-button"
+                id="backFromLogin"
+            >
+                ← Voltar
+            </button>
+
+            <div class="login-icon">
+                👤
+            </div>
+
+            <p class="tag">
+                NIGHTSTORE SCHOOL
+            </p>
+
+            <h1>
+                Minha conta
+            </h1>
+
+            <p class="login-description">
+                Entre para acompanhar seus pedidos
+                e acessar seus materiais.
+            </p>
+
+            <input
+                type="text"
+                id="loginName"
+                placeholder="Seu nome"
+            >
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Seu e-mail"
+            >
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Sua senha"
+            >
+
+            <button
+                class="login-submit"
+                id="loginSubmit"
+            >
+                ENTRAR NA CONTA
+            </button>
+
+            <p
+                class="login-message"
+                id="loginMessage"
+            >
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHECKOUT -->
+    <section
+        class="checkout-page"
+        id="checkoutPage"
+    >
+
+        <div class="checkout-content">
+
+            <button
+                class="back-button"
+                id="backFromCheckout"
+            >
+                ← Voltar
+            </button>
+
+
+            <div class="checkout-header">
+
+                <p class="tag">
+                    NIGHTSTORE SCHOOL
+                </p>
+
+                <h1>
+                    Finalizar compra
+                </h1>
+
+                <p>
+                    Confira seus produtos antes de continuar.
+                </p>
+
+            </div>
+
+
+            <div
+                class="checkout-products"
+                id="checkoutProducts"
+            >
+            </div>
+
+
+            <div class="checkout-summary">
+
+                <div>
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong id="checkoutSubtotal">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Desconto
+                    </span>
+
+                    <strong>
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <div class="checkout-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="checkoutTotal">
+                        R$ 0,00
+                    </strong>
+
+                </div>
+
+
+                <button
+                    class="continue-payment"
+                    id="continuePayment"
+                >
+                    CONTINUAR →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PEDIDO CONFIRMADO -->
+    <section
+        class="order-page"
+        id="orderPage"
+    >
+
+        <div class="order-box">
+
+            <div class="order-success">
+                ✓
+            </div>
+
+            <p class="tag">
+                NIGHTSTORE SCHOOL
+            </p>
+
+            <h1>
+                Pedido criado!
+            </h1>
+
+            <p>
+                Seu pedido foi registrado com sucesso.
+            </p>
+
+
+            <div class="order-number">
+
+                Pedido
+
+                <strong id="orderNumber">
+                    #NS0000
+                </strong>
+
+            </div>
+
+
+            <div class="order-status">
+
+                <span>
+                    ●
+                </span>
+
+                <div>
+
+                    <strong>
+                        Processando
+                    </strong>
+
+                    <p>
+                        Estamos preparando seu pedido.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="back-home-button"
+                id="backHomeButton"
+            >
+                VOLTAR PARA A LOJA
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FUNDO DO CARRINHO -->
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+    >
+    </div>
+
+
+    <!-- CARRINHO -->
+    <aside
+        class="cart-panel"
+        id="cartPanel"
+    >
+
+        <div class="cart-header">
+
+            <div>
+
+                <p>
+                    SEU CARRINHO
+                </p>
+
+                <h2>
+                    Produtos
+                </h2>
+
+            </div>
+
+
+            <button
+                class="close-cart"
+                id="closeCart"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        >
+        </div>
+
+
+        <div
+            class="cart-empty"
+            id="cartEmpty"
+        >
+
+            <div>
+                🛒
+            </div>
+
+            <h3>
+                Seu carrinho está vazio
+            </h3>
+
+            <p>
+                Adicione algum produto para começar.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="cartTotal">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+
+            <button
+                class="checkout-button"
+                id="checkoutButton"
+            >
+                FINALIZAR COMPRA →
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
